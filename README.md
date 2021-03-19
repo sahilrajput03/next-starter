@@ -11,7 +11,9 @@ npm run dev #Or use simply `nd`.
 ### Make demo request to backend
 
 ```bash
-curl -X POST -H "Content-Type: application/json" \
+curl \
+  -X POST \
+  -H "Content-Type: application/json" \
   -d '{"os": "pop os", "email": "sahilrajput03@gmail.com"}' \
   http://localhost:3000/api/hello
 # Backend api will respond by appending name property to the body you send to the api. Yikes!
