@@ -18,6 +18,10 @@ curl \
   -H "Content-Type: application/json" \
   -d '{"os": "pop os", "email": "sahilrajput03@gmail.com"}' \
   http://localhost:3000/api/hello
+
+# OR USE YOUR `POST` CLI FROM `my_bin`
+
+post 'http://localhost:3000/api/hello' '{"os": "pop os", "email": "sahilrajput03@gmail.com"}'
 ```
 
 ### Use below commands
