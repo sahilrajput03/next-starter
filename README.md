@@ -19,9 +19,9 @@ curl \
   -d '{"os": "pop os", "email": "sahilrajput03@gmail.com"}' \
   http://localhost:3000/api/hello
 
-# OR USE YOUR `POST` CLI FROM `my_bin`
+# OR USE YOUR `quick` CLI FROM `my_bin`
 
-post 'http://localhost:3000/api/hello' '{"os": "pop os", "email": "sahilrajput03@gmail.com"}'
+quick post 'https://nifty-darwin-aec8ea.netlify.app/api/hello' '{os: "pop os", email: "sahilrajput03@gmail.com"}'
 ```
 
 ### Use below commands
