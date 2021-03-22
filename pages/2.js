@@ -4,8 +4,10 @@ export default function Two({quotes}) {
   return <div>{quotes ? quotes.map((quote) => <li key={quote}>{quote}</li>) : "Loading..."}</div>;
 }
 
+const URL = "https://loveapi.ml/kanye.rest/quotes.json";
+
 export async function getStaticProps(context) {
-  const quotes = await (await fetch("http://localhost:3000/api/quotes")).json();
+  const quotes = await (await fetch(URL)).json();
   return {
     props: {quotes}, // will be passed to the page component as props
   };
