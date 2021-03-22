@@ -16,7 +16,9 @@ export default function HomePage() {
 }
 
 function UsingSwr() {
-  const {data, error} = useSWR('/api/hello', fetcher)
+  // const {data, error} = useSWR('/api/hello', fetcher)
+  // Passing fetcher is optional, as by default  ^^ fetcher is defined by swr in it.
+  const {data, error} = useSWR('/api/hello') // This works cool...
   log(data)
 
   if (error) return <div>failed to load</div>
