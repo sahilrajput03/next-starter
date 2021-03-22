@@ -7,6 +7,7 @@ export default function Two({quotes}) {
 const URL = "https://loveapi.ml/kanye.rest/quotes.json";
 
 export async function getStaticProps(context) {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   const quotes = await (await fetch(URL)).json();
   return {
     props: {quotes}, // will be passed to the page component as props
