@@ -1,5 +1,3 @@
-import styles from "../styles/Home.module.css";
-
 export default function Home() {
-  return <div className={styles.container}>Hello, from nextjs!</div>;
+  return <div className="tokyo center full-height">Hello, from nextjs, yo!!</div>;
 }
